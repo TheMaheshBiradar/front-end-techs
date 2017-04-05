@@ -9,7 +9,6 @@ import org.jbehave.core.embedder.Embedder;
 import org.jbehave.core.io.StoryFinder;
 import org.jbehave.core.steps.CandidateSteps;
 
-import com.anjali.automation.demo.serenity.AlertStep;
 import com.anjali.automation.demo.steps.MainStep;
 
 import net.serenitybdd.jbehave.SerenityStories;
@@ -18,7 +17,7 @@ public class TestAAlert extends SerenityStories {
 
 	public List<String> storyPaths() {
 		StoryFinder finder = new StoryFinder();
-		return finder.findPaths(codeLocationFromClass(this.getClass()).getFile(), Arrays.asList("**/*.story"), null);
+		return finder.findPaths(codeLocationFromClass(this.getClass()).getFile(), Arrays.asList("**/*.story"),  Arrays.asList(""));
 	}
 
 	public static void main(String[] args) {
