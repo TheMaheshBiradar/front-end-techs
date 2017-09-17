@@ -1,0 +1,16 @@
+abc();
+
+function abc (){
+  
+  console.log('asas');
+}
+
+
+//this works for function declaration but not for expression:
+
+cd();
+
+
+var cd = function (){  
+  console.log('asas');
+}
