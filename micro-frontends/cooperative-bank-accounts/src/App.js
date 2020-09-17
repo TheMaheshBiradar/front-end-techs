@@ -20,8 +20,8 @@ function App() {
       <div>
         <header>
           <h3>Accounts</h3>
-          <div>
-            <button onClick={() => fetchAccounts()}>Show All Accounts</button>
+          <div >
+            <button onClick={() => fetchAccounts()}> <h4 className="title">Show All Accounts</h4></button>
           </div>
           {accounts.map(value => <div>{value}</div>)}
         </header>

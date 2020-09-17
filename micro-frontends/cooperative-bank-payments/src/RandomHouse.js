@@ -23,7 +23,7 @@ export default function RandomHouse() {
         <header>
           <h3>Get a Home loan for your dream home</h3>
           <div>
-            <button onClick={() => fetchRandomHouse()}>New House Available for Loan</button>
+              <button onClick={() => fetchRandomHouse()}><h4 className="title">New House Available for Loan</h4></button>
           </div>
           {randomHouse.map(value => <div>{value.name}</div>)}
         </header>
